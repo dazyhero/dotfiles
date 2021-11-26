@@ -1,0 +1,44 @@
+2021-06-29 15:16:41,773 DEBUG    root            Loaded Command Group: ['gcloud', 'sql']
+2021-06-29 15:16:41,777 DEBUG    root            Loaded Command Group: ['gcloud', 'sql', 'instances']
+2021-06-29 15:16:41,824 DEBUG    root            Loaded Command Group: ['gcloud', 'sql', 'instances', 'describe']
+2021-06-29 15:16:41,826 DEBUG    root            Running [gcloud.sql.instances.describe] with arguments: [INSTANCE: "ithub_db"]
+2021-06-29 15:16:41,895 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): sqladmin.googleapis.com:443
+2021-06-29 15:16:42,395 DEBUG    urllib3.connectionpool https://sqladmin.googleapis.com:443 "GET /sql/v1beta4/projects/ithub-316817/instances/ithub_db?alt=json HTTP/1.1" 400 None
+2021-06-29 15:16:42,396 DEBUG    root            (gcloud.sql.instances.describe) HTTPError 400: Invalid request: instance name (ithub_db).
+Traceback (most recent call last):
+  File "/Users/dazyhero/Downloads/google-cloud-sdk/lib/surface/sql/instances/describe.py", line 90, in Run
+    instance = sql_client.instances.Get(
+  File "/Users/dazyhero/Downloads/google-cloud-sdk/lib/googlecloudsdk/third_party/apis/sqladmin/v1beta4/sqladmin_v1beta4_client.py", line 545, in Get
+    return self._RunMethod(
+  File "/Users/dazyhero/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 737, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+  File "/Users/dazyhero/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 743, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+  File "/Users/dazyhero/Downloads/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 609, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+apitools.base.py.exceptions.HttpBadRequestError: HttpError accessing <https://sqladmin.googleapis.com/sql/v1beta4/projects/ithub-316817/instances/ithub_db?alt=json>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Tue, 29 Jun 2021 12:16:42 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"', 'transfer-encoding': 'chunked', 'status': 400}>, content <{
+  "error": {
+    "code": 400,
+    "message": "Invalid request: instance name (ithub_db).",
+    "errors": [
+      {
+        "message": "Invalid request: instance name (ithub_db).",
+        "domain": "global",
+        "reason": "invalid"
+      }
+    ]
+  }
+}
+>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dazyhero/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 982, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/Users/dazyhero/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 809, in Run
+    resources = command_instance.Run(args)
+  File "/Users/dazyhero/Downloads/google-cloud-sdk/lib/surface/sql/instances/describe.py", line 102, in Run
+    raise calliope_exceptions.HttpException(error)
+googlecloudsdk.calliope.exceptions.HttpException: HTTPError 400: Invalid request: instance name (ithub_db).
+2021-06-29 15:16:42,409 ERROR    root            (gcloud.sql.instances.describe) HTTPError 400: Invalid request: instance name (ithub_db).

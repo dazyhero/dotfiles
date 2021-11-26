@@ -1,0 +1,14 @@
+2021-06-29 15:01:54,768 DEBUG    root            Loaded Command Group: ['gcloud', 'app']
+2021-06-29 15:01:54,772 DEBUG    root            Loaded Command Group: ['gcloud', 'app', 'logs']
+2021-06-29 15:01:54,804 DEBUG    root            Loaded Command Group: ['gcloud', 'app', 'logs', 'tail']
+2021-06-29 15:01:54,806 DEBUG    root            Running [gcloud.app.logs.tail] with arguments: [--service: "default"]
+2021-06-29 15:01:54,809 INFO     ___FILE_ONLY___ Waiting for new log entries...
+
+2021-06-29 15:01:54,835 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2021-06-29 15:01:54,845 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2021-06-29 15:01:54,991 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2021-06-29 15:04:37,681 INFO     ___FILE_ONLY___ 
+
+Command killed by keyboard interrupt
+
+

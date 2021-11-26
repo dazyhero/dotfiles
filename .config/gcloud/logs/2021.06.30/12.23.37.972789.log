@@ -1,0 +1,29 @@
+2021-06-30 12:23:37,973 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2021-06-30 12:23:37,975 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2021-06-30 12:23:37,976 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "json", --min-expiry: "3600"]
+2021-06-30 12:23:37,981 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2021-06-30 12:23:37,986 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2021-06-30 12:23:38,137 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2021-06-30 12:23:38,144 INFO     root            Display format: "default json"
+2021-06-30 12:23:38,144 INFO     ___FILE_ONLY___ {
+  "configuration": {
+    "active_configuration": "default",
+    "properties": {
+      "core": {
+        "account": "dazyhero@gmail.com",
+        "disable_usage_reporting": "True",
+        "project": "ithub-316817"
+      }
+    }
+  },
+  "credential": {
+    "access_token": "ya29.a0ARrdaM8aUHA7ho1_kQ1Kv2nEZ3u3ibE8mpUG-VniPYAgcDdhL9pgE1UBBwnMx841zrxgZs704bVJk7tjxMegyiPkI9MojTPh66SW6tvtBZ5LTkeLCdAqCsvz2ObSptTNqzjKAfgT-3LhsKlydc3MN2ykvkOAiWACMLslPg",
+    "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjExMmU0YjUyYWI4MzMwMTdkMzg1Y2UwZDBiNGM2MDU4N2VkMjU4NDIiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjMyNTU1OTQwNTU5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTE2MDc3OTkzNTAwMjE5NTE3MzgzIiwiZW1haWwiOiJkYXp5aGVyb0BnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6IkM1NHg2Q1lyZEhtRndOMjFnYXdEeFEiLCJpYXQiOjE2MjUwNDUwMTgsImV4cCI6MTYyNTA0ODYxOH0.NuYz4AkbqrQ7up7xCDVqgMFUnjggLbu9vO-5hq-dZ0cJLWEMM9jsVyfAEzkJzzzQ1YlDIjpkbxZ7KbfqwS5CIWLGEpC_ZWCi4O7pnOUxUdMXNc-TXRdGb1pgOrDr8SMZk5g0-LaUhkU_bsWG3Fgk6QyCfqnZf1AIL4Ofk6eISrePs-EYrXiv1WM9oDrDS601SBXjEdGuTUYwEI7jQSq7TGuK3JXv2MQODL7v6CZ6p1I7I-iT59fkGJXQdpNp7YwLaL8Z_AOUJX-p1jDmjMAeqLfDGmdpmug_CPwagrTZjHWiDOOH3Ucra5sB22sQ7g_ea79xW6CMnIudyzL73765Qg",
+    "token_expiry": "2021-06-30T10:23:37Z"
+  },
+  "sentinels": {
+    "config_sentinel": "/Users/dazyhero/.config/gcloud/config_sentinel"
+  }
+}
+2021-06-30 12:23:38,145 INFO     ___FILE_ONLY___ 
+

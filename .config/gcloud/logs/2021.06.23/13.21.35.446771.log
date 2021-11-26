@@ -1,0 +1,11 @@
+2021-06-23 13:21:35,483 DEBUG    root            Loaded Command Group: ['gcloud', 'container']
+2021-06-23 13:21:35,485 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'images']
+2021-06-23 13:21:35,545 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'images', 'list']
+2021-06-23 13:21:35,588 DEBUG    root            Running [gcloud.container.images.list] with arguments: [--repository: "eu.gcr.io/ithub-316817"]
+2021-06-23 13:21:36,240 INFO     root            Display format: "table(name)"
+2021-06-23 13:21:36,240 INFO     ___FILE_ONLY___ NAME
+2021-06-23 13:21:36,242 INFO     ___FILE_ONLY___ 
+
+2021-06-23 13:21:36,242 INFO     ___FILE_ONLY___ eu.gcr.io/ithub-316817/fe
+2021-06-23 13:21:36,242 INFO     ___FILE_ONLY___ 
+

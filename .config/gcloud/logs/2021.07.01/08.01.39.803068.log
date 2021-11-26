@@ -1,0 +1,32 @@
+2021-07-01 08:01:39,805 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2021-07-01 08:01:39,809 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2021-07-01 08:01:39,811 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "json", --min-expiry: "3600"]
+2021-07-01 08:01:39,823 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2021-07-01 08:01:39,832 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2021-07-01 08:01:39,983 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2021-07-01 08:01:39,986 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2021-07-01 08:01:39,988 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2021-07-01 08:01:40,150 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2021-07-01 08:01:40,156 INFO     root            Display format: "default json"
+2021-07-01 08:01:40,156 INFO     ___FILE_ONLY___ {
+  "configuration": {
+    "active_configuration": "default",
+    "properties": {
+      "core": {
+        "account": "dazyhero@gmail.com",
+        "disable_usage_reporting": "True",
+        "project": "ithub-316817"
+      }
+    }
+  },
+  "credential": {
+    "access_token": "ya29.a0ARrdaM8C0q9vOyHvBwCgX3eedPiV7faVD6DxR_161TGC6jMTSA6YpyomntjPx-XRGQGxvxDylzt66ofqgsNSPOMaIiBfVPDnFQWvjUI-NQq889O41a2JinDbs1vog7EkO2Y70XOb9jOFUVmwhnuRykKXfBDpaY2--iZ4xQ",
+    "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjExMmU0YjUyYWI4MzMwMTdkMzg1Y2UwZDBiNGM2MDU4N2VkMjU4NDIiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjMyNTU1OTQwNTU5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTE2MDc3OTkzNTAwMjE5NTE3MzgzIiwiZW1haWwiOiJkYXp5aGVyb0BnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6IkRyT0NheDVlZUlvblRGeFRobjJJRmciLCJpYXQiOjE2MjUxMTU3MDAsImV4cCI6MTYyNTExOTMwMH0.VkOn3BOWncmIrTDdO96kdmY5-71IGJEAxhIuH98kP1JrDsYBiTyGsFPPIWOoM9EBrXNjBIx3Gp-2xTnQipD9bxtzLFP5agFrR2ZBpMNqeye4_9Am4xfXDD17ITAgN5smlWV1smT6mtNanYpurA1hryzeYKFdctjicnNdmaKWGyPXmvLFmYryvqL_aXdBl6fU8yrUUiB1Za40R6qRiudm3WfmnttpPUkzlQiqiDDaSblvnBwc-_70KZsiCH5FZmPaHofX0Xyyox5_LvI3a2-uK2Xg2Jw8S3g7VWEEwl5IIsS_bUpkRCc7pnS_EPyh_jVXiGOiUEL8V6u3OOmLL9bWvA",
+    "token_expiry": "2021-07-01T06:01:39Z"
+  },
+  "sentinels": {
+    "config_sentinel": "/Users/dazyhero/.config/gcloud/config_sentinel"
+  }
+}
+2021-07-01 08:01:40,157 INFO     ___FILE_ONLY___ 
+

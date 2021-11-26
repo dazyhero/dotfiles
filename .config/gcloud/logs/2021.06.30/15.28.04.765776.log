@@ -1,0 +1,37 @@
+2021-06-30 15:28:04,768 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2021-06-30 15:28:04,773 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2021-06-30 15:28:04,775 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "json", --min-expiry: "3600"]
+2021-06-30 15:28:04,788 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2021-06-30 15:28:04,801 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2021-06-30 15:28:04,943 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2021-06-30 15:28:04,947 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2021-06-30 15:28:04,949 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2021-06-30 15:28:05,087 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2021-06-30 15:28:05,093 INFO     root            Display format: "default json"
+2021-06-30 15:28:05,094 INFO     ___FILE_ONLY___ {
+  "configuration": {
+    "active_configuration": "default",
+    "properties": {
+      "core": {
+        "account": "dazyhero@gmail.com",
+        "disable_usage_reporting": "True",
+        "project": "ithub-316817"
+      }
+    }
+  },
+  "credential": {
+    "access_token": "ya29.a0ARrdaM_L5QtNqPosuDhl3iVsClLuXICOxbgZYFcrt974_aBOu3Q7iwTsWhKSZFt_3ciX0r73IC5gGtzrpZ0rQEtpGiKfppew7C0SpRNTgqtAXtmOH7XNLE_EZKld7qFO8Z0PizKLr5c8sdzSvgpQwKZfrKx9Fl5s3oTyeQ",
+    "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjExMmU0YjUyYWI4MzMwMTdkMzg1Y2UwZDBiNGM2MDU4N2VkMjU4NDIiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjMyNTU1OTQwNTU5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTE2MDc3OTkzNTAwMjE5NTE3MzgzIiwiZW1haWwiOiJkYXp5aGVyb0BnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6ImFkMWZpb1puNlB3MkRUb3dHV0tGT3ciLCJpYXQiOjE2MjUwNTYwODUsImV4cCI6MTYyNTA1OTY4NX0.YYVHNY7SH9f861oa1Cd9prmEdXor6gdSEKQrJ3XEvJC4bsO9GFz1sJvlVmbD5Hb5u_bAyrGZaScriYkkkELUvniuvYWGBUU1qUgl5tjdyDoMjdkfyxgZtc6qF9jpfv4MCIpzKmtg2AlsUYshAJspjE8IhoxaUesC1K5_jZGCm1Q_sTgbWvxT_fiw9Dh5rGEeuem1UGfHZlfn99TRC75NvNGtlNW-JI6Tv1U-8fKDfb6MFukoU9MqpwCSyZma6iPQh2N8fsSd6o30nvb_z2ALY1lFs9S5Tpfosx00Vxh6Fv1klmsG68-jvFqEKBSMQliAqtv51Cp3wpC04I_6MBQSlQ",
+    "token_expiry": "2021-06-30T13:28:04Z"
+  },
+  "sentinels": {
+    "config_sentinel": "/Users/dazyhero/.config/gcloud/config_sentinel"
+  }
+}
+2021-06-30 15:28:05,094 INFO     ___FILE_ONLY___ 
+
+2021-06-30 15:28:05,095 DEBUG    root            Checking for updates...
+2021-06-30 15:28:05,105 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2021-06-30 15:28:05,299 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 153360
+2021-06-30 15:28:05,370 DEBUG    root            Updating notification cache...
+2021-06-30 15:28:05,371 DEBUG    root            Activating notification: [default]
